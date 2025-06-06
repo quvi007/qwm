@@ -127,11 +127,11 @@ function EditWorksheet() {
         let text = "";
         for (let i = 0; i < sectionsQuestions.length; ++i) {
             text += `<h1>${sectionsQuestions[i].sectionName}</h1>\n`;
-            text += "<ol>\n"
+            // text += "<ol>\n"
             for (let j = 0; j < sectionsQuestions[i].questions.length; ++j) {
                 text += `<li>${sectionsQuestions[i].questions[j]}</li>\n`;
             }
-            text += "</ol>\n";
+            // text += "</ol>\n";
         }
         navigator.clipboard.writeText(text);
     };
